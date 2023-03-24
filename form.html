@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form | OASIS</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      data-bs-theme="dark"
+      style="background-color: #00695c"
+    >
+      <div class="container-md">
+        <a class="navbar-brand mb-0 fs-3" href="#">Oasis</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="form.html">Form</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <button class="btn btn-outline-light" type="button">
+                  Login
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- active -->
+    <div class="container form my-5">
+      <div class="card">
+        <h5 class="card-header">
+          Formulir Pendaftaran Marching Band Gema Oasis Mansa
+        </h5>
+        <form method="post" id="formulir">
+          <div class="card-body">
+            <div class="row mb-3">
+              <label for="nama" class="col-sm-2 col-form-label"
+                >Nama<span id="wajib">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nama"
+                  id="nama"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="kelamin" class="col-sm-2 col-form-label"
+                >Kelamin<span id="wajib">*</span></label
+              >
+              <div class="col-sm-10">
+                <select id="kelamin" class="form-select">
+                  <option value="Laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="kelas" class="col-sm-2 col-form-label"
+                >Kelas<span id="wajib">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="kelas"
+                  id="kelas"
+                  placeholder="11 AGAMA 1"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="penyakit" class="col-sm-2 col-form-label"
+                >Penyakit yang pernah diderita<span id="wajib">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="penyakit"
+                  id="penyakit"
+                  required
+                />
+              </div>
+            </div>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0">
+                Pernah Mengikuti Marching<span id="wajib">*</span>
+              </legend>
+              <div class="col-sm-10 mb-4">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="pernahIkutTidak"
+                    id="PernahIkut"
+                    value="Pernah"
+                    checked
+                  />
+                  <label class="form-check-label" for="PernahIkut">
+                    Pernah
+                  </label>
+                </div>
+                <div class="form-check form-check-inline mb-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="pernahIkutTidak"
+                    id="tidakIkut"
+                    value="Tidak"
+                  />
+                  <label class="form-check-label" for="tidakIkut">
+                    Tidak
+                  </label>
+                </div>
+              </div>
+              <legend class="col-form-label col-sm-2 pt-0">
+                Tertarik Masuk Divisi
+              </legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="divisi"
+                    id="pit"
+                    value="PIT"
+                  />
+                  <label class="form-check-label" for="pit"> PIT </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="divisi"
+                    id="brass"
+                    value="Brass"
+                  />
+                  <label class="form-check-label" for="brass"> Brass </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="divisi"
+                    id="perkusi"
+                    value="Percussion"
+                  />
+                  <label class="form-check-label" for="perkusi">
+                    Percussion
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="divisi"
+                    id="cg"
+                    value="Color Guard"
+                  />
+                  <label class="form-check-label" for="cg"> Color Guard </label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="row mb-3">
+              <label for="alat" class="col-sm-2 col-form-label"
+                >Pernah Memakai Alat</label
+              >
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="alat" id="alat" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="alasan" class="col-sm-2 col-form-label"
+                >Alasan Ingin Bergabung<span id="wajib">*</span></label
+              >
+              <div class="col-sm-10">
+                <textarea
+                  class="form-control"
+                  style="height: 80px"
+                  name="alasan"
+                  id="alasan"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="formFile" class="col-sm-2 col-form-label"
+                >Foto Profil<span id="wajib">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  class="form-control"
+                  type="file"
+                  id="formFile"
+                  accept=".jpg,.gif,.png,.jpeg"
+                  required
+                />
+              </div>
+            </div>
+            <hr class="border opacity-50" />
+            <div class="row mb-3">
+              <label for="email" class="col-sm-2 col-form-label"
+                >Email<span id="wajib">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Isi untuk keperluan Login"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="password" class="col-sm-2 col-form-label"
+                >password<span id="wajib">*</span></label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  name="password"
+                  id="password"
+                  placeholder="Isi untuk keperluan Login"
+                  required
+                />
+              </div>
+            </div>
+            <hr class="border opacity-50" />
+            <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="gridCheck1"
+                    required
+                  />
+                  <label class="form-check-label" for="gridCheck1">
+                    Dengan ini siap bergabung dengan Marching Band Gema Oasis
+                    Samarinda<span id="wajib">*</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card-footer bg-transparent d-grid gap-2 d-md-flex justify-content-md-end"
+          >
+            <input type="submit" class="btn btn-primary" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- active -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2023 MB Oasis Mansa</span>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/form.js"></script>
+  </body>
+</html>
